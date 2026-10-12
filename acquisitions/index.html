@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Acquisition Bible</title>
+<meta name="description" content="The 5 rules Lior Pozin runs before buying a company. Free download.">
+<meta property="og:title" content="The Acquisition Bible">
+<meta property="og:description" content="Lior Pozin: the 5 rules I run before buying a company. Free, 12 slides plus a one-page checklist.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;600&display=swap">
+<style>
+  :root{
+    --bg:#E9E7E3; --surface:#F5F3EF; --ink:#1F1F1F; --ink-2:#5C5A56;
+    --line:#9A9791; --line-soft:#CFCCC6; --sand:#C9A97A; --sand-ink:#7A5A2E;
+    --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+    --sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#161616; --surface:#1F1F1F; --ink:#F5F3EF; --ink-2:#B5B1AA;
+      --line:#5C5A56; --line-soft:#33312E; --sand:#D9C3A5; --sand-ink:#D9C3A5;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#161616; --surface:#1F1F1F; --ink:#F5F3EF; --ink-2:#B5B1AA;
+    --line:#5C5A56; --line-soft:#33312E; --sand:#D9C3A5; --sand-ink:#D9C3A5;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.5;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:820px;margin:0 auto;padding-block:40px 64px;padding-inline:16px}
+  a{color:inherit}
+  a:focus-visible,button:focus-visible{outline:2px solid var(--sand);outline-offset:3px}
+  .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+  h1{font-family:var(--mono);font-weight:700;font-size:clamp(28px,5vw,42px);line-height:1.1;margin:18px 0 14px;text-wrap:balance;letter-spacing:-.01em}
+  .lede{max-width:60ch;font-size:16px;margin:0}
+  .lede p{margin:0 0 10px}
+  .author{display:grid;grid-template-columns:72px 1fr auto;gap:18px;align-items:center;border:1px solid var(--ink);background:var(--surface);padding:16px;margin-top:24px}
+  .author-pic{width:72px;height:72px;object-fit:cover;display:block;border:1px solid var(--sand)}
+  .author-name{font-weight:600;font-size:17px}
+  .author-known{color:var(--ink-2);font-size:14px;margin-top:2px;max-width:52ch}
+  .btn{font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;border:1px solid var(--ink);padding:10px 14px;white-space:nowrap;background:transparent;color:var(--ink);display:inline-block;cursor:pointer}
+  .btn:hover{background:var(--ink);color:var(--bg)}
+  .btn.solid{background:var(--ink);color:var(--bg)}
+  .btn.solid:hover{background:var(--sand);border-color:var(--sand);color:#1F1F1F}
+  section.block{border:1px solid var(--line);background:var(--surface);margin-top:24px}
+  .block-head{padding:14px 18px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:12px;align-items:baseline;flex-wrap:wrap}
+  .block-head h2{font-family:var(--mono);font-size:18px;margin:0;font-weight:700}
+  .block-head .note{font-family:var(--mono);font-size:12px;color:var(--ink-2)}
+  ol.steps{margin:0;padding:14px 18px 16px 40px}
+  ol.steps li{margin:6px 0}
+  .path{font-family:var(--mono);font-size:13px;background:var(--bg);padding:1px 6px;border:1px solid var(--line-soft)}
+  .skill{display:grid;grid-template-columns:44px 1fr auto;gap:14px;padding:18px;border-top:1px solid var(--line-soft);align-items:start}
+  .skill:first-of-type{border-top:0}
+  .skill .idx{font-family:var(--mono);font-size:12px;color:var(--ink-2);padding-top:4px}
+  .skill h3{font-family:var(--mono);font-size:20px;margin:0;font-weight:700}
+  .skill .by{font-family:var(--mono);font-size:12px;color:var(--ink-2);margin-top:2px}
+  .skill .by.mine{color:var(--sand-ink)}
+  .skill p{margin:8px 0 0;max-width:58ch}
+  .skill .when{font-family:var(--mono);font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:var(--sand-ink);margin-top:10px}
+  .skill .actions{display:flex;flex-direction:column;gap:8px;align-items:stretch}
+  .skill .actions .btn{text-align:center}
+  .first{margin:14px 18px 0;padding:10px 12px;border:1px solid var(--sand);background:var(--bg);font-size:14px}
+  .first b{font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--sand-ink);margin-right:6px}
+  .claude-code{padding:14px 18px 18px;border-top:1px solid var(--line-soft);font-size:14px;color:var(--ink-2)}
+  pre{font-family:var(--mono);font-size:13px;background:var(--bg);border:1px solid var(--line-soft);padding:10px 12px;overflow-x:auto;margin:8px 0 0;color:var(--ink)}
+  footer{margin-top:36px;font-size:13px;color:var(--ink-2);max-width:64ch}
+  footer p{margin:0 0 8px}
+  @media (max-width:600px){
+    .author{grid-template-columns:56px 1fr}
+    .author-pic{width:56px;height:56px}
+    .author .btn{grid-column:1 / -1;text-align:center}
+    .skill{grid-template-columns:1fr}
+    .skill .idx{display:none}
+    .skill .actions{flex-direction:row}
+    .skill .actions .btn{flex:1}
+  }
+  @media (prefers-reduced-motion:no-preference){ .btn{transition:background .15s,color .15s} }
+
+  .rule{display:grid;grid-template-columns:44px 1fr;gap:14px;padding:18px;border-top:1px solid var(--line-soft)}
+  .rule:first-of-type{border-top:0}
+  .rule .idx{font-family:var(--mono);font-size:12px;color:var(--sand-ink);padding-top:4px}
+  .rule h3{font-family:var(--mono);font-size:19px;margin:0;font-weight:700}
+  .rule blockquote{margin:8px 0 0;padding-left:12px;border-left:3px solid var(--sand);font-family:var(--mono);font-size:14px;max-width:60ch}
+  .rule p{margin:8px 0 0;max-width:58ch;color:var(--ink-2)}
+  .rule.hi{background:var(--ink);color:var(--bg)}
+  .rule.hi p{color:var(--line-soft)}
+  .dl{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+  @media (max-width:600px){ .rule{grid-template-columns:1fr} .rule .idx{display:none} .dl .btn{flex:1;text-align:center} }
+</style>
+</head>
+<body>
+<main class="wrap">
+  <div class="eyebrow"><span>Lior Pozin · The Acquisition Bible</span></div>
+  <h1>The 5 rules I run before buying a company</h1>
+  <div class="lede">
+    <p>12 slides and a one-page checklist. Free.</p>
+    <p>Copy the rules. Run your next deal through them.</p>
+  </div>
+  <div class="dl">
+    <a class="btn solid" href="the-acquisition-bible.pdf" download>Download the Bible</a>
+    <a class="btn" href="the-acquisition-checklist.pdf" download>Download the checklist</a>
+  </div>
+
+  <section class="author" aria-label="Lior Pozin">
+    <img class="author-pic" src="data:image/jpeg;base64,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" alt="Lior Pozin" width="80" height="80">
+    <div>
+      <div class="author-name">Lior Pozin</div>
+      <div class="author-known">CEO &amp; Co-Founder of AutoDS, acquired by Fiverr. Runs a 200-person company. Posts about building and buying companies.</div>
+    </div>
+    <a class="btn solid" href="https://www.linkedin.com/in/liorpozin/" target="_blank" rel="noopener">Follow Lior</a>
+  </section>
+
+  <section class="block" aria-labelledby="rules">
+    <div class="block-head"><h2 id="rules">The 5 rules</h2><span class="note">5 of 5, make the offer</span></div>
+    
+    <div class="rule">
+      <div class="idx">01</div>
+      <div><h3>People I trust</h3><blockquote>"It starts with a connection to people I trust."</blockquote><p>Do we have a real link to the founders, and would we hire them?</p></div>
+    </div>
+    <div class="rule">
+      <div class="idx">02</div>
+      <div><h3>Value we can add</h3><blockquote>"We know how to add value. Either improving profitability or improving the product."</blockquote><p>Can we name the fixes that raise profit or improve the product?</p></div>
+    </div>
+    <div class="rule">
+      <div class="idx">03</div>
+      <div><h3>A gap in our ecosystem</h3><blockquote>"What does our ecosystem get from it? A complementary product that fills the holes."</blockquote><p>Does it close a hole our customers feel today?</p></div>
+    </div>
+    <div class="rule hi">
+      <div class="idx">04</div>
+      <div><h3>Payback in 12 months</h3><blockquote>"If I can get the investment back within a year, I'm buying."</blockquote><p>Asking price ÷ monthly profit after our fixes. 12 or less, buy. Over 12, pass.</p></div>
+    </div>
+    <div class="rule">
+      <div class="idx">05</div>
+      <div><h3>A product we know</h3><blockquote>"We don't buy something we don't know. Usually it's something we planned to build anyway, and it saves us time and focus."</blockquote><p>Was it on our roadmap anyway?</p></div>
+    </div>
+  </section>
+
+  <footer>
+    <p>More playbooks from inside AutoDS at <a href="/">follow.liorpozin.com</a>.</p>
+  </footer>
+</main>
+</body>
+</html>
