@@ -101,6 +101,16 @@
   ol.table li{margin:8px 0;max-width:60ch}
   .dl{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
   @media (max-width:600px){ .rule{grid-template-columns:1fr} .rule .idx{display:none} .dl .btn{flex:1;text-align:center} }
+  .dd{display:grid;grid-template-columns:1fr 1fr}
+  .dd>div{padding:14px 18px}
+  .dd>div+div{border-left:1px solid var(--line-soft)}
+  .dd h3{font-family:var(--mono);font-size:13px;letter-spacing:.06em;text-transform:uppercase;margin:0 0 6px}
+  .dd ul{margin:0;padding-left:18px}
+  .dd li{margin:8px 0}
+  .dd .no h3{color:var(--sand-ink)}
+  ol.plain{margin:0;padding:6px 18px 16px 40px}
+  ol.plain li{margin:8px 0;max-width:60ch}
+  @media (max-width:600px){ .dd{grid-template-columns:1fr} .dd>div+div{border-left:0;border-top:1px solid var(--line-soft)} }
 </style>
 </head>
 <body>
@@ -165,6 +175,52 @@
     <div class="score" id="score" aria-live="polite">0 of 5. Any no, fix it first.</div>
   </section>
 
+  <section class="block" aria-labelledby="founder">
+    <div class="block-head"><h2 id="founder">What I look for in a founder</h2></div>
+    <div class="sec"><p>The company is half the deal. The other half is the person I will hit targets with for the next few years.</p></div>
+    <ol class="plain">
+      <li>Someone I trust, ideally through people I already know.</li>
+      <li>Someone who tells the truth, including the weak parts, in the first conversation.</li>
+      <li>Someone who signs up for targets and believes we hit them together.</li>
+      <li>Someone who knows their numbers by heart.</li>
+      <li>Someone who still wants to play the game after the deal closes.</li>
+    </ol>
+  </section>
+
+  <section class="block" aria-labelledby="dodont">
+    <div class="block-head"><h2 id="dodont">Do's and don'ts if you want to sell</h2></div>
+    <div class="dd">
+      <div><h3>Do</h3><ul>
+        <li>Get to know the buyers in your space years before you sell.</li>
+        <li>Practice on buyers you would never sell to, and fix the slide that loses the room.</li>
+        <li>Know your monthly profit after the buyer's fixes.</li>
+        <li>Ask every buyer what happens to your team the day after.</li>
+        <li>Show the targets you would sign up for.</li>
+      </ul></div>
+      <div class="no"><h3>Don't</h3><ul>
+        <li>Pitch your dream buyer first.</li>
+        <li>Pretend the buyer has no alternative. If they are entering your space anyway, say it.</li>
+        <li>Ask for a price the payback math can't support.</li>
+        <li>Sell to a buyer whose plan is to squeeze the company for cash.</li>
+        <li>Let a deal drag for months. My exit closed in 23 days.</li>
+      </ul></div>
+    </div>
+  </section>
+
+  <section class="block" aria-labelledby="ask">
+    <div class="block-head"><h2 id="ask">7 questions to ask a buyer before you sign</h2></div>
+    <div class="sec"><p>I've sat on both sides of the table. Two years before my exit I walked away from a buyer a day before closing, because his plan was to cut the team that built the company with me. These are the questions that would have saved me 6 months.</p></div>
+    <ol class="plain">
+      <li>What happens to my team the day after?</li>
+      <li>Is your plan to grow the company or to squeeze it for cash?</li>
+      <li>Which targets will I be measured on, and what happens if we miss one?</li>
+      <li>Why buy me instead of building it yourself?</li>
+      <li>How fast can you close?</li>
+      <li>Who on your side will I work with every day?</li>
+      <li>Why now?</li>
+    </ol>
+  </section>
+
   <section class="block" aria-labelledby="deals">
     <div class="block-head"><h2 id="deals">2 deals that show the rules at work</h2></div>
     <div class="deal"><h3>DSM-Tool</h3><p>When I started, they were the market leader. Two founders, an MBA, connections, money. Everything I did not have at 21. For years I sat in their user groups and read every complaint. I overtook them in 5 years, then I bought them. Rules 3 and 5: I knew that product better than almost anyone.</p></div>
@@ -182,12 +238,13 @@
     </ol>
   </section>
 
-  <section class="block" aria-labelledby="skipped">
-    <div class="block-head"><h2 id="skipped">The deals I skipped</h2></div>
-    <div class="sec">
-      <p>The deals I regret are the ones I didn't do. I wasn't aggressive enough. Same playbook, I knew what I was doing, and sometimes I should have taken a loan to close.</p>
-      <p>What that means for you: buyers hesitate too. Make the yes easy. Clean numbers, clear targets, and a one-sentence answer to why you, why now.</p>
-    </div>
+  <section class="block" aria-labelledby="mistakes">
+    <div class="block-head"><h2 id="mistakes">My 3 biggest mistakes</h2></div>
+    <ol class="plain">
+      <li><b>I wasn't aggressive enough.</b> The deals I regret are the ones I skipped. Same playbook, I knew what I was doing, and I should have taken a loan to close. For you: buyers hesitate too. Make the yes easy.</li>
+      <li><b>I didn't make the time.</b> Some deals I passed on because I didn't have the time to do them properly. For you: a buyer with no time is a buyer who stalls. Ask who on their side owns the deal.</li>
+      <li><b>I spent 6 months with the wrong buyer.</b> As a seller, I learned the buyer's plan for my team only at the end, and walked away a day before closing. For you: ask about the plan on the first call.</li>
+    </ol>
   </section>
 
   <footer>
