@@ -6,7 +6,7 @@
 <title>Plan Like Claude Code</title>
 <meta name="description" content="A 600-line AI plan, turned into one page you read in a minute. Thariq's html-plan skill: live example and one-line install.">
 <meta property="og:title" content="Plan with AI like the Claude Code team">
-<meta property="og:description" content="See a real interactive HTML plan, then install the skill in one line. Works with Claude Code and Codex.">
+<meta property="og:description" content="See a real interactive HTML plan, then add the skill to Claude in two minutes.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;600&display=swap">
 <style>
@@ -119,27 +119,19 @@
   </section>
 
   <section class="block" aria-labelledby="install">
-    <div class="block-head"><h2 id="install">Get it: pick your setup</h2><span class="note">2 minutes</span></div>
-    <div class="setups">
-      <div class="setup">
-        <h3>I use the Claude app</h3>
-        <ol class="big">
-          <li><a class="btn solid" href="html-plan.zip" download>Download the skill</a></li>
-          <li>In Claude, turn on <span class="path">Settings &gt; Capabilities &gt; Code execution</span></li>
-          <li>Go to <span class="path">Customize &gt; Skills &gt; +</span> and upload the file</li>
-          <li>Write: <span class="path">Make an HTML plan for</span> and what you want to build</li>
-        </ol>
-      </div>
-      <div class="setup">
-        <h3>I use Claude Code or Codex</h3>
-        <ol class="big">
-          <li>Copy this line
-            <div class="copyrow"><pre id="cmd">npx -y skills add anthropics/claude-plugins-community --skill html-plan</pre><button class="btn" id="copy" type="button">Copy</button></div>
-          </li>
-          <li>Paste it in your terminal and press Enter</li>
-          <li>Write: <span class="path">/html-plan</span> and what you want to build</li>
-        </ol>
-      </div>
+    <div class="block-head"><h2 id="install">Get the skill</h2><span class="note">2 minutes</span></div>
+    <div class="setup">
+      <ol class="big">
+        <li><a class="btn solid" href="html-plan.zip" download>Download the skill</a></li>
+        <li>In Claude, turn on <span class="path">Settings &gt; Capabilities &gt; Code execution</span></li>
+        <li>Go to <span class="path">Customize &gt; Skills &gt; +</span> and upload the file</li>
+        <li>Write: <span class="path">Make an HTML plan for</span> and what you want to build</li>
+      </ol>
+    </div>
+    <div class="after">Using Claude Code? Paste this in your terminal instead, then type <span class="path">/html-plan</span> and what you want to build.</div>
+    <div class="copyrow" style="margin-bottom:18px">
+      <pre id="cmd">npx -y skills add anthropics/claude-plugins-community --skill html-plan --agent claude-code -g -y</pre>
+      <button class="btn" id="copy" type="button">Copy</button>
     </div>
   </section>
 
