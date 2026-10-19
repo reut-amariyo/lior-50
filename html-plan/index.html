@@ -118,19 +118,19 @@
   </section>
 
   <section class="block" aria-labelledby="install">
-    <div class="block-head"><h2 id="install">Install it</h2><span class="note">One line · Claude Code or Codex</span></div>
+    <div class="block-head"><h2 id="install">Install it</h2><span class="note">2 minutes</span></div>
+    <div class="first"><b>Claude app</b>Turn on code execution first: <span class="path">Settings &gt; Capabilities</span>. Skills don't show up without it.</div>
     <ol class="steps">
-      <li>Paste this in your terminal. It asks which agent you use.</li>
+      <li>Download the skill: one zip. <a class="btn solid" href="html-plan.zip" download style="margin-left:8px">Download html-plan.zip</a></li>
+      <li>Upload it: <span class="path">Customize &gt; Skills &gt; + &gt; Upload a skill</span>.</li>
+      <li>Ask Claude for an HTML plan of what you want to build. That's it.</li>
     </ol>
+    <div class="after"><b style="font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--sand-ink)">Claude Code or Codex</b> One line in your terminal. It asks which agent you use.</div>
     <div class="copyrow">
       <pre id="cmd">npx -y skills add anthropics/claude-plugins-community --skill html-plan</pre>
       <button class="btn" id="copy" type="button">Copy</button>
     </div>
-    <ol class="steps" start="2">
-      <li>Ask your agent for an HTML plan of what you want to build. In Claude Code: <span class="path">/html-plan</span> and the feature.</li>
-      <li>That's it.</li>
-    </ol>
-    <div class="after">Needs Node installed. Prefer the Claude Code plugin? <span class="path">/plugin install html-plan@claude-community</span> after adding <span class="path">anthropics/claude-plugins-community</span> as a marketplace.</div>
+    <div class="after">Then ask your agent for an HTML plan. In Claude Code: <span class="path">/html-plan</span> and the feature.</div>
   </section>
 
   <section class="block" aria-labelledby="get">
@@ -141,7 +141,7 @@
   </section>
 
   <footer>
-    <p>html-plan is built by Thariq Shihipar of Anthropic's Claude Code team and published under the MIT License in <a href="https://github.com/anthropics/claude-plugins-community/tree/main/html-plan" target="_blank" rel="noopener">anthropics/claude-plugins-community</a>. The example plan is his, unchanged. <a href="https://x.com/trq212/status/2107192901537329354" target="_blank" rel="noopener">His original post</a>.</p>
+    <p>html-plan is built by Thariq Shihipar of Anthropic's Claude Code team and published under the MIT License in <a href="https://github.com/anthropics/claude-plugins-community/tree/main/html-plan" target="_blank" rel="noopener">anthropics/claude-plugins-community</a>. The example plan is his, unchanged. The zip is his skill as published, with its MIT license. <a href="https://x.com/trq212/status/2107192901537329354" target="_blank" rel="noopener">His original post</a>.</p>
     <p>Shared by Lior Pozin. The skill is Thariq's.</p>
   </footer>
 </main>
